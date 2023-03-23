@@ -4,9 +4,9 @@ import java.util.HashSet;
 
 public class ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
-        HashSet<Character> columnSet[] = new HashSet[9];
-        HashSet<Character> lineSet[] = new HashSet[9];
-        HashSet<Character> blocksSet[][] = new HashSet[3][3];
+        HashSet<Character>[] columnSet = new HashSet[9];
+        HashSet<Character>[] lineSet = new HashSet[9];
+        HashSet<Character>[][] blocksSet = new HashSet[3][3];
 
         for(int c = 0; c < board.length; c++) {
             for (int l = 0; l < board[c].length; l++) {
