@@ -8,7 +8,7 @@ import java.util.Stack;
 
 import static java.util.Collections.emptyList;
 
-public class DepthForSearchTraversal {
+public class DepthFirstSearchTraversal {
 
     public static List<String> traverseGraph(Graph graph, int startNodeId) {
         Node startNode = graph.getNode(startNodeId);

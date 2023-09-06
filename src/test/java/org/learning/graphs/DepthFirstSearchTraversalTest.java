@@ -8,12 +8,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DepthForSearchTraversalTest {
+class DepthFirstSearchTraversalTest {
 
     @Test
-    public void traverse_graph_using_depth_for_search() {
+    public void traverse_graph_using_depth_first_search() {
         Graph graph = createGraph();
-        List<String> path = DepthForSearchTraversal.traverseGraph(graph, 1);
+        List<String> path = DepthFirstSearchTraversal.traverseGraph(graph, 1);
 
         List<String> expectedList = new ArrayList<>();
         expectedList.add("Ana");
